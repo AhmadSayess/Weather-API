@@ -5,7 +5,7 @@ import MostlyCloudy from "../img/weather-icons/mostlycloudy.svg";
 export default class WeatherItem extends Component {
   render() {
     return <div className="card">
-    <img src={MostlyCloudy} alt="sun" width="200" height="147" />
+    <img src={MostlyCloudy} alt="sun" width="200" height="118" />
     <p>overcast clouds</p>
     <div className="temp">
       <b>Temperature&nbsp;</b> 10&#176; to 11 &#176;c{" "}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Search from "./components/Search";
 import Card from "./components/Card";
+import FakeWeather from "./data/FakeWeather.json";
 
 
 import SayHi, { SayHello } from "./components/WeatherItem";
@@ -11,6 +12,7 @@ import "./App.css";
 import mostlycloudy from "./img/weather-icons/mostlycloudy.svg";
 import Clear from "./img/weather-icons/clear.svg";
 import WeatherItem from "./components/WeatherItem";
+
 
 
 
@@ -36,7 +38,8 @@ class App extends Component {
         
         <div className="all">
           <WeatherItem/>
-          <Card/>
+          <Card data={FakeWeather.list}/>
+          
         </div>
       </div>
     );
